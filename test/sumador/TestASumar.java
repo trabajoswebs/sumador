@@ -9,15 +9,22 @@ public class TestASumar {
 	@Test
 	 public void testUnaCifra() {
         ASumar sumi = new ASumar();
-        String resultado = sumi.mostrar("7");
+        String resultado = sumi.sumar("7");
         assertEquals("7 = 7",resultado );
     }
 	
 	@Test
 	 public void testValorNegativo() {
        ASumar sumi = new ASumar();
-       String resultado = sumi.mostrar("-74");
+       String resultado = sumi.sumar("-74");
        assertEquals("",resultado );
    }
+	
+	@Test
+	 public void testMayorQueNueve() {
+      ASumar sumi = new ASumar();
+      String resultado = sumi.sumar("74");
+      assertEquals("74 = 11",resultado );
+  }
 
 }

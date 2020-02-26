@@ -9,20 +9,19 @@ package sumador;
 
 public class ASumar {
 	
-	/**
-	 * Muestra una concatenación de numeros de String 
-	 * @param cad String cadena de numeros
-	 * @return String en formato "numero = numero". Devuelve vacio si el numero es negativo
-	 */
-	public String mostrar(String cad) {
-        String numero = cad;
-        
-        if(cad.charAt(0) == '-') return ""; //  Si la cadena contiene un valor negativo
-        
-        if (numero.length() == 1) {
-            return (numero + " = " + numero);
-        }
-		return numero;
-	} 
+	 public static String sumar(String cadena) {
+	        int suma = 0;
+	        
+	        if(cadena.charAt(0) == '-') return "";
+
+	        for (int i = 0; i < cadena.length(); i++) {
+	            // Cadena de un dígito.
+	            String digito = cadena.substring(i, i + 1);
+	            
+	            suma = suma + Integer.parseInt(digito);
+	        }
+	        return cadena + " = " + suma;
+
+	    }
 
 }
