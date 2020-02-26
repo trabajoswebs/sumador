@@ -23,8 +23,8 @@ public class TestASumar {
 	@Test
 	 public void testMayorQueNueve() {
       ASumar sumi = new ASumar();
-      String resultado = sumi.sumar("74");
-      assertEquals("74 = 11",resultado );
+      String resultado = sumi.sumar("7423");
+      assertEquals("7 + 4 + 2 + 3 = 16",resultado );
   }
 
 }
