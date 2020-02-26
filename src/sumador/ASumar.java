@@ -23,6 +23,6 @@ public class ASumar {
             return (numero + " = " + numero);
         }
 		return numero;
-	}
+	} 
 
 }
