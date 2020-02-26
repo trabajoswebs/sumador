@@ -14,7 +14,7 @@ public class ASumar {
 	 * @param cad String cadena de numeros
 	 * @return String en formato "numero = numero". Devuelve vacio si el numero es negativo
 	 */
-	public String mostrar(String cad) {
+	public String sumar(String cad) {
         String numero = cad;
         
         if(cad.charAt(0) == '-') return ""; //  Si la cadena contiene un valor negativo
